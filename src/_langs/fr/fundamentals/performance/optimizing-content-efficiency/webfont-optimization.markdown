@@ -26,7 +26,7 @@ key-takeaways:
 
 notes:
   svg:
-    - "Techniquement, il existe également le <a href='http://caniuse.com/svg-fonts'>conteneur de police SVG</a>, mais il n'a jamais été compatible avec IE ni Firefox, et est maintenant obsolète dans Chrome. Son utilité est donc limitée, et nous l'omettons volontairement dans ce guide."
+    - "Techniquement, il existe égalchemin critiqueement le <a href='http://caniuse.com/svg-fonts'>conteneur de police SVG</a>, mais il n'a jamais été compatible avec IE ni Firefox, et est maintenant obsolète dans Chrome. Son utilité est donc limitée, et nous l'omettons volontairement dans ce guide."
   zopfli:
     - "Pensez à utiliser la <a href='http://en.wikipedia.org/wiki/Zopfli'>compression Zopfli</a> pour les formats EOT, TTF et WOFF. Zopfli est un logiciel de compression compatible avec les données zlib, qui propose une réduction de la taille des fichiers supplémentaire d'environ 5 % par rapport à gzip."
   local-fonts: 
@@ -277,7 +277,7 @@ Le chargement inactif de polices comporte une importante implication cachée qui
 2. Le navigateur commence à analyser la réponse HTML et à construire le modèle DOM.
 3. Le navigateur découvre le code CSS, JS et autres ressources, et transmet les requêtes.
 4. Le navigateur construit le modèle CSSOM une fois que tout le contenu du code CSS est reçu, et le combine avec l'arborescence du modèle DOM pour construire l'arborescence d'affichage.
-  * Les demandes de police sont envoyées une fois que l'arborescence d'affichage indique quelles variantes de la police sont nécessaires pour affiché le texte spécifié sur la page.
+  * Les demandes de police sont envoyées une fois que l'arborescence d'affichage indique quelles variantes de la police sont nécessaires pour afficher le texte spécifié sur la page.
 5. Le navigateur effectue la mise en page et peint le contenu sur l'écran.
   * Si la police n'est pas encore disponible, le navigateur ne peut pas afficher les pixels de texte.
   * Une fois que la police est disponible, le navigateur peint les pixels de texte.
